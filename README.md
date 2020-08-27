@@ -10,8 +10,7 @@ I have implemented three types of layers for the network: a dense layer that is 
 
 I have used the log-sum-exp trick to prevent overflows in the exponential term of the Softmax function:
 
-file:///home/arvind/Desktop/1.png
+
 
 Hence, the back prop of the softmax can be reduced to the following:
 
-file:///home/arvind/Desktop/2.png

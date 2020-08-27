@@ -10,12 +10,15 @@ I have implemented three types of layers for the network: a dense layer that is 
 
 I have used the log-sum-exp trick to prevent overflows in the exponential term of the Softmax function:
 
-![Alt text](1.png?raw=true "Title")
+<p align="center">
+  <img align="center" src="1.png">
+</p>
 
 
 Hence, the back prop of the softmax can be reduced as follows:
-
-![Alt text](2.png?raw=true "Title")
+<p align="center">
+  <img align="center" src="2.png">
+</p>
 
 # Building the Model
 
@@ -25,6 +28,8 @@ Model.bprop(logits, labels, istraining=True) - runs the backward propagation thr
 
 Model.update parameters(lr) - updates all trainable parameters in each layer. The input of this function is the learning rate.
 
-![Alt text](3.png?raw=true "Title")
+<p align="center">
+  <img align="center" src="3.png">
+</p>
 
 Training and Testing are done in the usual way.
